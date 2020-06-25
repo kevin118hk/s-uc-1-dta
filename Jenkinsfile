@@ -10,11 +10,11 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("dstubked/ubuntu:dta")
+        app = docker.build("felilca/ubuntu:latest")
     }
     
     stage ('Aqua Scan') {
-        aqua customFlags: '', hideBase: false, hostedImage: '', localImage: 'dstubked/ubuntu:dta', locationType: 'local', notCompliesCmd: '', onDisallowed: 'fail', policies: '', register: false, registry: '', showNegligible: false
+        aqua customFlags: '', hideBase: false, hostedImage: '', localImage: 'felilca/ubuntu:latest', locationType: 'local', notCompliesCmd: '', onDisallowed: 'fail', policies: '', register: false, registry: '', showNegligible: false
     }
     
     /*stage('Push image') {*/
