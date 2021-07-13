@@ -1,1 +1,1 @@
-FROM felilca/ubuntu:latest
+FROM dstubked/jellyfish:DTA
